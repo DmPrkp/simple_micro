@@ -11,34 +11,6 @@ action_help() {
    echo "This script aggregate other command. Please use list for see list command.";
 }
 
-action_list() {
-    echo "LOCAL"
-    echo "================================================================"
-    echo "install - install all dependencies";
-    echo "run - start all local servers (back and front)";
-    echo "stop - stop back server";
-    echo
-    echo "PRODUCTION"
-    echo "================================================================"
-    echo "production - all-in-one command for production";
-    echo "stop_production - stop production";
-    echo "pull_production - pull production";
-    echo "install_production - install production";
-    echo "build_production - build production";
-    echo "start_production - start production";
-    echo "restart_daemon - restart back server";
-    echo
-    echo "OTHER"
-    echo "================================================================"
-    echo "list - listing command";
-    echo "help - for help";
-    echo "alias - to make alias for this script";
-    echo "composer arg1 arg2 ... argN - action for action composer";
-    echo "yarn arg1 arg2 ... argN - action for action yarn";
-    echo "back_console arg1 arg2 ... argN - command for execute for back";
-    echo "daemon [arg1 arg2 ... argN] - run socket server daemon"
-}
-
 # LOCAL ACTIONS
 
 action_install() {
